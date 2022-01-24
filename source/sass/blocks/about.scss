@@ -1,0 +1,39 @@
+.about {
+  padding-top: 14px;
+  padding-bottom: 42px;
+}
+
+.about__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+  list-style: none;
+}
+
+.about__item {
+  margin-bottom: 22px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $grey-600;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

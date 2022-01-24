@@ -1,0 +1,52 @@
+.intro {
+  padding-bottom: 11px;
+}
+
+.intro__inner {
+  height: 302px;
+  background-image: linear-gradient(
+      $green-100-opacity-085,
+      $green-100-opacity-085
+    ),
+    url("../img/cat-with-tongue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: -280px;
+  text-align: center;
+}
+
+.intro__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $white;
+}
+
+.intro__slogan {
+  margin: 0;
+  margin-bottom: 29px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.intro__button {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
