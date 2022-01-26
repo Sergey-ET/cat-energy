@@ -4,11 +4,7 @@
 
 .intro__inner {
   height: 302px;
-  background-image: linear-gradient(
-      $green-100-opacity-085,
-      $green-100-opacity-085
-    ),
-    url("../img/cat-with-tongue.jpg");
+  background-image: linear-gradient($green-100-opacity-085, $green-100-opacity-085), url("../img/cat-with-tongue.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
