@@ -1,0 +1,20 @@
+.message {
+  padding: 9px 10px 0 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $grey-600;
+  border: 1px solid $grey-200;
+  resize: none;
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $grey-600;
+  }
+}

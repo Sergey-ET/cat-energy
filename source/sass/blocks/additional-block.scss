@@ -1,0 +1,16 @@
+.additional-block {
+  border-top: 2px solid $green-100;
+}
+
+.additional-block__title {
+  margin-bottom: 39px;
+  padding-right: 23px;
+}
+
+.additional-block__item {
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 41px;
+  }
+}

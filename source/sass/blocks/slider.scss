@@ -7,11 +7,13 @@
 
 .slider__slide {
   height: 232px;
+
   &--before {
     background-image: url("../img/before.png");
     background-repeat: no-repeat;
     background-position: left center;
   }
+
   &--after {
     display: none;
     background-image: url("../img/after.png");

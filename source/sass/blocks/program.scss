@@ -1,0 +1,30 @@
+.program {
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
+.program__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.program__title {
+  margin: 0;
+  margin-bottom: 37px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+}
+
+.program__text {
+  margin: 0;
+  margin-bottom: 39px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
+}

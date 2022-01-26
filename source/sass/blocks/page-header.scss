@@ -21,6 +21,14 @@
   list-style: none;
 }
 
+.main-nav__item {
+  border-top: 1px solid $grey-190;
+
+  &:last-child {
+    border-bottom: 1px solid $grey-190;
+  }
+}
+
 .main-nav__link {
   display: block;
   padding: 22px 0;
@@ -30,5 +38,4 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
-  border-top: 1px solid $grey-190;
 }

@@ -1,0 +1,20 @@
+.owner-block {
+  border-top: 2px solid $green-100;
+}
+
+.owner-block__title {
+  margin-bottom: 35px;
+  margin-right: 79px;
+}
+
+.owner-block__item {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 23px;
+  }
+}
+
+.owner-block__input {
+  padding-right: 40px;
+}
