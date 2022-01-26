@@ -1,0 +1,65 @@
+.card {
+  padding-top: 19px;
+  padding-bottom: 25px;
+  border-top: 1px solid $grey-150;
+  border-bottom: 1px solid $grey-150;
+
+  &--more {
+    padding-top: 78px;
+    text-align: center;
+  }
+}
+
+.card__name {
+  margin: 0;
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.card__name-link {
+  color: $grey-700;
+}
+
+.card__info {
+  width: 142px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-600;
+  border-collapse: collapse;
+}
+
+.card__data:nth-child(2) {
+  text-align: right;
+}
+
+.card__button {
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  &--more {
+    color: $grey-600;
+    background-color: $grey-100;
+  }
+}
+
+.card__text {
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-600;
+}
