@@ -7,10 +7,22 @@
   padding-right: 23px;
 }
 
+.additional-block__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .additional-block__item {
   margin-bottom: 23px;
 
   &:last-child {
     margin-bottom: 41px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 221px;
   }
 }

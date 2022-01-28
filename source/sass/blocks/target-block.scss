@@ -3,6 +3,17 @@
   padding-bottom: 25px;
   border-top: 1px solid $grey-250;
   border-bottom: 1px solid $grey-250;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 196px;
+    border: 1px solid $grey-200;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }
 
 .target-block__item {

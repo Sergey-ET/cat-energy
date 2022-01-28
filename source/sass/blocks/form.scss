@@ -2,10 +2,6 @@
   margin: 0;
   padding: 0;
   border: none;
-
-  &:nth-child(2) {
-    margin-bottom: 26px;
-  }
 }
 
 .block-form__title {
@@ -24,6 +20,11 @@
 
 .form__inner {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .form__button {
@@ -32,6 +33,16 @@
   width: 100%;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    margin-right: 61px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }
 
 .form__note {
@@ -41,4 +52,13 @@
   font-size: 14px;
   line-height: 16px;
   color: $black;
+}
+
+.form__container {
+  margin-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -7,8 +7,20 @@
   margin-right: 79px;
 }
 
+.owner-block__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .owner-block__item {
   margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 
   &:last-child {
     margin-bottom: 23px;
