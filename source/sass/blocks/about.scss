@@ -4,8 +4,20 @@
 }
 
 .about__wrapper {
-  width: 280px;
+  max-width: 320px;
+  padding: 0 20px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 0 30px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 0 110px;
+  }
 }
 
 .about__title {
@@ -23,6 +35,15 @@
   padding: 0;
   padding-left: 80px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 37px;
+    padding-left: 0;
+  }
 }
 
 .about__item {
@@ -35,6 +56,11 @@
   color: $grey-600;
 
   &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
     margin-bottom: 0;
   }
 }
