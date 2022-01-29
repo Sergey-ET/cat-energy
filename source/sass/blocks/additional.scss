@@ -1,10 +1,27 @@
 .additional {
   padding-top: 25px;
+  padding-bottom: 35px;
 }
 
 .additional__wrapper {
-  width: 280px;
+  max-width: 320px;
+  padding: 0 20px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 0 30px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 80px;
+  }
 }
 
 .additional__title {
@@ -15,10 +32,84 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    margin-bottom: 0;
+  }
 }
 
 .additional__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 39px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+.additional__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+  }
+}
+
+.additional__button {
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}
+
+.additional__gift {
+  position: relative;
+  height: 290px;
+  padding-top: 186px;
+  text-align: center;
+  background-image: url("../img/gift.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    padding-top: 71px;
+    padding-left: 422px;
+    text-align: left;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 290px;
+    padding-top: 186px;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+.additional__details {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    top: 58px;
+    left: 101px;
+    background-image: url("../img/icon_gift.svg");
+  }
 }
