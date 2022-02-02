@@ -23,17 +23,26 @@
 }
 
 .slider__controls {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   width: 228px;
   height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 590px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: auto;
+  }
 }
 
 .slider__button {
-  padding: 10px 0;
-  min-width: 70px;
+  padding: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -43,6 +52,21 @@
   background-color: inherit;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $black-opacity-04;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $black-opacity-04;
+    }
+
+    &:active {
+      border: none;
+    }
+  }
 }
 
 .slider__scale {
@@ -55,6 +79,14 @@
   background-color: $white;
   border: 1px solid $grey-350;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    padding: 0;
+    background-color: $grey-230;
+    border: none;
+  }
 }
 
 .slider__bar {
@@ -62,4 +94,37 @@
   height: 6px;
   background-color: $green-100;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+    top: 3px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: $green-100;
+    border: 13px solid $white;
+    border-radius: 50%;
+    cursor: pointer;
+    filter: drop-shadow(0 1px 3px $black-opacity-016);
+
+    &:hover,
+    &:focus {
+      filter: drop-shadow(0 2px 4px $black-opacity-019);
+    }
+
+    &:active {
+      filter: drop-shadow(0 3px 5px $black-opacity-02);
+      box-shadow: 0 0 0 1px $green-100;
+    }
+  }
 }

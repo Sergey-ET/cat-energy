@@ -9,4 +9,13 @@
   color: $white;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $green-200;
+  }
+
+  &:active {
+    color: $white-opacity-03;
+  }
 }

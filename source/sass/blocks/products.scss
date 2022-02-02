@@ -13,12 +13,10 @@
 }
 
 .products__wrapper {
-  max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 768px;
     padding: 0 30px;
     margin-top: 0;
   }
@@ -42,15 +40,73 @@
 }
 
 .products__item {
-  padding: 30px 20px 18px 20px;
+  position: relative;
+  padding: 30px 20px 0 20px;
   background-color: $grey-100;
 
+  &--slim {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: 22px;
+      width: 50px;
+      height: 53px;
+      background-image: url("../img/cat-slim.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        top: 81px;
+        left: auto;
+        right: 62px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 41px;
+        left: 52px;
+      }
+    }
+  }
+
+  &--pro {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 13px;
+      width: 67px;
+      height: 50px;
+      background-image: url("../img/cat-pro.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        top: 91px;
+        left: auto;
+        right: 28px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 47px;
+        left: 33px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 279px 53px 52px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding: 77px 51px 55px 52px;
     width: 570px;
   }
 
   &:first-child {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
@@ -68,27 +124,101 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 214px;
+  }
 }
 
 .products__description {
   margin: 0;
-  margin-bottom: 23px;
+  padding-bottom: 23px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $grey-600;
+  border-bottom: 1px solid $grey-250;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .products__link {
+  position: relative;
   display: block;
   padding-top: 15px;
+  padding-bottom: 18px;
+  width: 135px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
-  border-top: 1px solid $grey-250;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 100px;
+    width: 32px;
+    height: 12px;
+    background-image: url("../img/icon_arrow-small.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background-image: url("../img/icon_arrow-big.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 165px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: 10px;
+      left: 120px;
+    }
+  }
+}
+
+.transfer {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

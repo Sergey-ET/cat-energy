@@ -1,5 +1,9 @@
 // Colors
 $black: #000000;
+$black-opacity-016: rgba(0, 0, 0, 0.16);
+$black-opacity-019: rgba(0, 0, 0, 0.19);
+$black-opacity-02: rgba(0, 0, 0, 0.2);
+$black-opacity-04: rgba(0, 0, 0, 0.4);
 $green-100: #68b738;
 $green-100-opacity-085: rgba(104, 183, 56, 0.85);
 $green-200: #5eaa2f;
@@ -8,6 +12,7 @@ $grey-150: #ebebeb;
 $grey-160: #eaeaea;
 $grey-190: #e6e6e6;
 $grey-200: #e7e7e7;
+$grey-230: #dcdcdc;
 $grey-250: #d9d9d9;
 $grey-300: #d3d3d3;
 $grey-350: #cdcdcd;
@@ -19,7 +24,9 @@ $grey-700: #222222;
 $grey-800: #111111;
 $red: #ff8282;
 $white: #ffffff;
+$white-opacity-03: rgba(255, 255, 255, 0.3);
 
 // Viewports
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1440px;

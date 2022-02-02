@@ -1,10 +1,20 @@
 .page-footer {
   padding-top: 39px;
+  padding-bottom: 22px;
   background-color: $grey-100;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
 }
 
 .page-footer__wrapper {
-  max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
@@ -13,7 +23,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 768px;
     padding: 0 30px;
   }
 
@@ -26,12 +35,30 @@
 .page-footer__logo {
   display: block;
   margin-bottom: 32px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__inner {
   padding: 20px 0;
   border-top: 1px solid $grey-250;
   border-bottom: 1px solid $grey-250;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .page-footer__list {
@@ -49,6 +76,20 @@
 
   &--facebook {
     stroke: $grey-500;
+
+    &:hover,
+    &:focus {
+      stroke: $green-100;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    fill: $green-100;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -56,7 +97,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 0;
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .copyright-footer__text {
@@ -66,8 +111,25 @@
   font-size: 16px;
   line-height: 18px;
   color: $grey-600;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }
 
 .copyright-footer__icon {
   fill: $grey-500;
+
+  &:hover,
+  &:focus {
+    fill: $green-100;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
