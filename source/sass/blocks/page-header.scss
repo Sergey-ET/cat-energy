@@ -51,7 +51,27 @@
   }
 }
 
+.page-header__logo-image {
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
+
 .page-header__logo-name {
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+
   @media (max-width: $mobile-width-only) {
     margin: 0 auto;
   }

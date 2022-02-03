@@ -11,12 +11,17 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $grey-600;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field__input {
   width: 100%;
-  margin-left: 11px;
-  padding: 13px 5px 13px 15px;
+  margin-left: 10px;
+  padding: 13px 5px 14px 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -32,5 +37,24 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $grey-600;
+  }
+
+  &:hover {
+    border: 1px solid $grey-350;
+  }
+
+  &:focus {
+    border: 2px solid $grey-600;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 5px 10px 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

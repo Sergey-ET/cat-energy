@@ -68,7 +68,7 @@
             </fieldset>
             <fieldset class="form__block block-form target-block">
               <legend class="block-form__title visually-hidden">Цель программы</legend>
-              <ul class="block-form__list">
+              <ul class="block-form__list target-block__list">
                 <li class="radio target-block__item">
                   <input class="radio__input visually-hidden" type="radio" name="target" id="weight-loss"
                     value="weight-loss" checked>
@@ -91,13 +91,13 @@
             <ul class="block-form__list owner-block__list">
               <li class="field owner-block__item">
                 <label class="field__label" for="email">E-&nbsp;mail:*</label>
-                <input class="field__input owner-block__input" type="email" name="email" id="email"
-                  placeholder="kuklachev@gmail.com">
+                <input class="field__input owner-block__input owner-block__input--email" type="email" name="email"
+                  id="email" placeholder="kuklachev@gmail.com">
               </li>
               <li class="field owner-block__item">
                 <label class="field__label" for="phone">Телефон:*</label>
-                <input class="field__input owner-block__input" type="tel" name="phone" id="phone"
-                  placeholder="8 (960) 900-60-90">
+                <input class="field__input owner-block__input owner-block__input--phone" type="tel" name="phone"
+                  id="phone" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
@@ -141,7 +141,9 @@
       <div class="contacts__wrapper">
         <div class="contacts__details">
           <p class="contacts__info">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-          <p class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <p class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8<br><span
+              class="contacts__city">Санкт-Петербург</span>
+          </p>
         </div>
       </div>
       <iframe class="contacts__map"

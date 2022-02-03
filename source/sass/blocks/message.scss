@@ -17,4 +17,23 @@
     text-transform: uppercase;
     color: $grey-600;
   }
+
+  &:hover {
+    border: 1px solid $grey-350;
+  }
+
+  &:focus {
+    border: 2px solid $grey-600;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 10px 0 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 }
