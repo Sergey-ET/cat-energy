@@ -42,28 +42,6 @@
   }
 }
 
-// .intro__inner {
-//   height: 302px;
-//   background-image: linear-gradient($green-100-opacity-085, $green-100-opacity-085),
-//     url("../img/cat-with-tongue.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-
-//   @media (min-width: $tablet-width) {
-//     display: none;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     display: block;
-//     width: 50%;
-//     height: 694px;
-//     position: absolute;
-//     transform: translateX(100%);
-//     z-index: -1;
-//     margin-top: -205px;
-//   }
-// }
-
 .intro__wrapper {
   padding: 0 20px;
   margin: 0 auto;
@@ -72,7 +50,6 @@
   @media (min-width: $tablet-width) {
     position: relative;
     padding: 0 30px 0 117px;
-    margin-top: 0;
     text-align: left;
   }
 
