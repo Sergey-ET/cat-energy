@@ -23,8 +23,12 @@
     <div class="page-header__wrapper">
       <div class="page-header__menu">
         <a class="page-header__logo-image">
-          <img class="page-header__logo-icon" src="./img/logo.svg" alt="Логотип интернет-магазина Cat Energy" width="35"
-            height="38">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+            <img class="page-header__logo-icon" src="./img/logo-mobile.svg" alt="Логотип интернет-магазина Cat Energy"
+              width="35" height="38">
+          </picture>
         </a>
         <a class="page-header__logo-name">
           <img src="./img/logo-header-name.svg" alt="Cat Energy" width="102" height="19">

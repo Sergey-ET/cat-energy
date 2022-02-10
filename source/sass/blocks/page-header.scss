@@ -30,7 +30,7 @@
 .page-header__menu {
   display: flex;
   align-items: center;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
   padding-right: 24px;
 
   @media (max-width: $mobile-width-only) {
@@ -46,12 +46,19 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    padding-right: 0;
     justify-content: space-between;
     width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
   }
 }
 
 .page-header__logo-image {
+  display: block;
+
   &[href]:hover,
   &[href]:focus {
     opacity: 0.8;
@@ -59,6 +66,20 @@
 
   &[href]:active {
     opacity: 0.6;
+  }
+}
+
+.page-header__logo-icon {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: auto;
   }
 }
 
@@ -74,5 +95,9 @@
 
   @media (max-width: $mobile-width-only) {
     margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
