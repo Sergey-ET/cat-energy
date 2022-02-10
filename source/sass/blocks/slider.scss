@@ -6,19 +6,47 @@
 }
 
 .slider__slide {
-  height: 232px;
+  height: 240px;
 
   &--before {
-    background-image: url("../img/before.png");
+    background-image: url("../img/cat-fat-mobile.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-fat-mobile@2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 520px;
+      background-image: url("../img/cat-fat-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/cat-fat-tablet@2x.png");
+      }
+    }
   }
 
   &--after {
     display: none;
-    background-image: url("../img/after.png");
+    background-image: url("../img/cat-skinny-mobile.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-skinny-mobile@2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 520px;
+      background-image: url("../img/cat-skinny-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/cat-skinny-tablet@2x.png");
+      }
+    }
   }
 }
 

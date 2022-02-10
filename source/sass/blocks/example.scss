@@ -5,13 +5,13 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
-    padding-bottom: 67px;
-    background-image: linear-gradient($white 50%, $grey-160 50%);
+    padding-bottom: 33px;
+    background-image: linear-gradient($white 600px, $grey-160 600px);
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 35px;
-    padding-bottom: 67px;
+    padding-top: 69px;
+    padding-bottom: 0;
     background-image: linear-gradient($white 160px, $grey-160 160px);
   }
 }
@@ -86,7 +86,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 64px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -213,6 +213,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-top: -38px;
     width: 690px;
     height: 656px;
   }

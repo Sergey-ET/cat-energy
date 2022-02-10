@@ -14,7 +14,12 @@
       background-image: linear-gradient($green-100-opacity-085, $green-100-opacity-085), url("../img/cat-with-tongue.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center center;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient($green-100-opacity-085, $green-100-opacity-085), url("../img/cat-with-tongue@2x.jpg");
+      }
     }
   }
 
@@ -37,7 +42,12 @@
       background-image: linear-gradient($green-100-opacity-085, $green-100-opacity-085), url("../img/cat-with-tongue-to-right.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center center;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient($green-100-opacity-085, $green-100-opacity-085), url("../img/cat-with-tongue-to-right@2x.jpg");
+      }
     }
   }
 }
@@ -116,13 +126,19 @@
 .intro__image {
   @media (min-width: $tablet-width) {
     position: absolute;
-    z-index: -1;
+    width: 708px;
+    height: auto;
+    top: 201px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    top: -80px;
+    left: 58%;
     z-index: 0;
-    top: 10%;
   }
 }
