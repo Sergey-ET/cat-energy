@@ -110,9 +110,14 @@
   height: 290px;
   padding-top: 186px;
   text-align: center;
-  background-image: url("../img/gift.jpg");
+  background-image: url("../img/gift-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -121,6 +126,11 @@
     padding-top: 71px;
     padding-right: 124px;
     text-align: left;
+    background-image: url("../img/gift-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -130,6 +140,11 @@
     padding-left: 43px;
     padding-right: 41px;
     text-align: center;
+    background-image: url("../img/gift-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-desktop@2x.jpg");
+    }
   }
 }
 
