@@ -34,7 +34,8 @@
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 32px;
+  margin: 0 auto 32px auto;
+  width: 128px;
 
   &:hover,
   &:focus {
@@ -46,7 +47,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -71,17 +72,8 @@
   list-style: none;
 }
 
-.page-footer__link {
+.page-footer__link-icon {
   fill: $grey-500;
-
-  &--facebook {
-    stroke: $grey-500;
-
-    &:hover,
-    &:focus {
-      stroke: $green-100;
-    }
-  }
 
   &:hover,
   &:focus {
@@ -90,6 +82,32 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--fb {
+    stroke: $grey-500;
+
+    &:hover,
+    &:focus {
+      stroke: $green-100;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--ig {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 28px;
+      height: 33px;
+    }
   }
 }
 

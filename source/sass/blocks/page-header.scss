@@ -48,11 +48,6 @@
     margin-bottom: 0;
     padding-right: 0;
     justify-content: space-between;
-    width: 174px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 202px;
   }
 }
 
@@ -72,14 +67,29 @@
 .page-header__logo-icon {
   display: block;
 
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 174px;
-    height: auto;
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 202px;
-    height: auto;
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
 
