@@ -113,7 +113,7 @@
 .products__title {
   margin: 0;
   margin-bottom: 29px;
-  padding-left: 90px;
+  padding-left: 71px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -136,7 +136,7 @@
 
 .products__description {
   margin: 0;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -163,8 +163,8 @@
   width: 135px;
   display: flex;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 18px;
+  padding-top: 19px;
+  padding-bottom: 22px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -192,7 +192,7 @@
 }
 
 .products__link-icon {
-  margin-left: 15px;
+  margin-left: 14px;
 
   @media (min-width: $tablet-width) {
     margin-left: 25px;

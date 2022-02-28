@@ -1,6 +1,6 @@
 .example {
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 36px;
   background-color: $grey-160;
 
   @media (min-width: $tablet-width) {
@@ -61,7 +61,7 @@
 
 .example__description {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -99,7 +99,7 @@
   align-items: center;
   justify-content: center;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -138,6 +138,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
   color: $black;
 
   @media (min-width: $tablet-width) {
