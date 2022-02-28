@@ -5,8 +5,8 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
-    padding-bottom: 33px;
-    background-image: linear-gradient($white 600px, $grey-160 600px);
+    padding-bottom: 14px;
+    background-image: linear-gradient($white 619px, $grey-160 619px);
   }
 
   @media (min-width: $desktop-width) {
@@ -51,7 +51,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,6 +70,7 @@
   color: $grey-600;
 
   @media (min-width: $tablet-width) {
+    width: 700px;
     margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
@@ -85,8 +86,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 59px;
+    margin-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
@@ -166,6 +166,11 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
+
+    &--weight {
+      width: 115px;
+      padding: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -186,7 +191,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    padding-top: 11px;
+    padding-top: 10px;
     width: 174px;
     font-size: 20px;
     line-height: 20px;
@@ -200,6 +205,11 @@
 }
 
 .example__price {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 10px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 63px;
   }

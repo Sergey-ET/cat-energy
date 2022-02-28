@@ -45,7 +45,7 @@
   background-color: $grey-100;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 279px 53px 52px;
+    padding: 77px 279px 57px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,8 +75,8 @@
 
     @media (min-width: $tablet-width) {
       width: 200px;
-      height: 211px;
-      top: 81px;
+      height: auto;
+      top: 80px;
       left: auto;
       right: 62px;
     }
@@ -95,7 +95,7 @@
 
     @media (min-width: $tablet-width) {
       width: 268px;
-      height: 200px;
+      height: auto;
       top: 91px;
       left: auto;
       right: 28px;
@@ -122,7 +122,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
@@ -147,7 +147,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-bottom: 48px;
+    margin-bottom: 51px;
     font-size: 16px;
     line-height: 24px;
     color: $black;
@@ -199,7 +199,7 @@
   }
 }
 
-.transfer {
+.products__transfer {
   display: none;
 
   @media (min-width: $tablet-width) {

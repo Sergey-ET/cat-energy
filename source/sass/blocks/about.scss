@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 23px;
+    padding-bottom: 46px;
     border-bottom: 1px solid $grey-190;
   }
 
@@ -37,6 +38,14 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .about__list {
@@ -51,8 +60,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 37px;
-    padding-left: 0;
-    padding-right: 76px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,7 +98,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     min-height: 280px;
-    padding-top: 151px;
+    padding-top: 152px;
     margin-bottom: 0;
     font-size: 16px;
     line-height: 24px;
@@ -108,6 +116,7 @@
 
     &--easy {
       width: 246px;
+      margin-right: 79px;
     }
 
     &--economical {
@@ -116,6 +125,7 @@
 
     &--fast {
       width: 249px;
+      margin-right: 75px;
     }
   }
 }
@@ -147,15 +157,25 @@
     }
 
     &--easy {
+      top: 38px;
       right: 10px;
     }
 
     &--economical {
-      right: 10px;
+      top: 38px;
+      right: 11px;
     }
 
     &--fast {
-      right: 5px;
+      right: 4px;
     }
+  }
+}
+
+.about__transfer {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
