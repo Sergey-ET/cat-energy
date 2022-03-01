@@ -9,9 +9,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    width: 440px;
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 478px;
     max-width: 610px;
   }
 }
@@ -19,7 +21,14 @@
 .main-nav__item {
   @media (min-width: $tablet-width) {
     margin-top: 10px;
-    margin-right: 36px;
+
+    &:first-child {
+      margin-right: 33px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 38px;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -41,7 +50,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 21px;
+    margin-top: 3px;
+
+    &:first-child {
+      margin-right: 34px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 34px;
+    }
 
     &--master--active {
       position: relative;
@@ -72,7 +89,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 8px 0;
-    font-size: 17px;
+    font-weight: normal;
+    font-size: 18px;
     line-height: 24px;
 
     &[href]:hover,

@@ -10,7 +10,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 57px;
-    padding-bottom: 58px;
   }
 }
 
@@ -26,8 +25,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
     padding: 0 110px;
+    justify-content: space-between;
   }
 }
 

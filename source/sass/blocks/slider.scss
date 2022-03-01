@@ -7,6 +7,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .slider__slide {
@@ -30,6 +34,10 @@
         background-image: url("../img/cat-fat-tablet@2x.png");
       }
     }
+
+    @media (min-width: $desktop-width) {
+      background-position: 40px 0;
+    }
   }
 
   &--after {
@@ -51,6 +59,10 @@
         background-image: url("../img/cat-skinny-tablet@2x.png");
       }
     }
+
+    @media (min-width: $desktop-width) {
+      background-position: 131px -2px;
+    }
   }
 }
 
@@ -66,8 +78,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-left: auto;
+    margin-left: 119px;
   }
 }
 

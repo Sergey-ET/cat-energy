@@ -65,6 +65,7 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
+    justify-content: flex-start;
   }
 }
 
@@ -115,17 +116,35 @@
     }
 
     &--easy {
-      width: 246px;
+      width: 245px;
       margin-right: 79px;
     }
 
     &--economical {
-      width: 247px;
+      width: 248px;
     }
 
     &--fast {
       width: 249px;
       margin-right: 75px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--healthy {
+      margin-right: 93px;
+    }
+
+    &--easy {
+      margin-right: 78px;
+    }
+
+    &--economical {
+      margin-right: 77px;
+    }
+
+    &--fast {
+      margin-right: 0;
     }
   }
 }

@@ -31,7 +31,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 111px;
-    padding-bottom: 206px;
+    padding-bottom: 185px;
 
     &::before {
       content: "";
@@ -104,6 +104,10 @@
     line-height: 20px;
     color: $black;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
+  }
 }
 
 .intro__button {
@@ -123,6 +127,12 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    padding-top: 18px;
+    padding-bottom: 16px;
+  }
 }
 
 .intro__image {
@@ -138,7 +148,7 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    top: -80px;
+    top: -82px;
     left: 58%;
     z-index: 0;
   }
