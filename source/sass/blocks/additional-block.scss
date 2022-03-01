@@ -1,5 +1,5 @@
 .additional-block__title {
-  width: 181px;
+  width: 184px;
   margin-left: -20px;
   margin-bottom: 34px;
   padding-left: 20px;
@@ -29,7 +29,7 @@
 }
 
 .additional-block__list {
-  margin-bottom: 41px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -47,7 +47,7 @@
 }
 
 .additional-block__item {
-  margin-bottom: 23px;
+  margin-bottom: 12px;
 
   &:last-child {
     margin-bottom: 0;

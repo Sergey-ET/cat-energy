@@ -1,5 +1,5 @@
 .cat-block__item {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -10,7 +10,7 @@
   }
 
   &:last-child {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 72px;
