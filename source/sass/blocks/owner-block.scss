@@ -33,11 +33,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 }
 
 .owner-block__item {
+  position: relative;
   margin-bottom: 11px;
 
   &:last-child {
@@ -63,11 +64,10 @@
 }
 
 .owner-block__input {
-  margin-left: 8px;
+  margin-left: 10px;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-right: 40px;
-  position: relative;
 
   &:focus + .owner-block__icon {
     stroke: $green-100;
@@ -90,7 +90,7 @@
 
 .owner-block__icon {
   position: absolute;
-  right: 34px;
+  right: 14px;
 
   &--email {
     fill: none;
@@ -102,6 +102,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    right: 83px;
+    right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--email {
+      right: 18px;
+    }
+
+    &--phone {
+      top: 15px;
+      right: 16px;
+    }
   }
 }

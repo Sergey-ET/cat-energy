@@ -21,12 +21,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
-    justify-content: space-between;
   }
 }
 

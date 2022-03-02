@@ -26,6 +26,12 @@
       margin-top: 22px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      margin-top: 23px;
+    }
+  }
 }
 
 .additional-block__list {
@@ -41,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 61px;
     gap: 42px 104px;
   }
 }

@@ -34,6 +34,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }
 
 .target-block__item {
@@ -41,9 +45,5 @@
 
   &:last-child {
     margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 568px;
   }
 }
