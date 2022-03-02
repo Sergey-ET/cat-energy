@@ -17,13 +17,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 262px;
+    width: 259px;
     margin-left: -40px;
     margin-bottom: 76px;
     padding-left: 40px;
 
     &::after {
-      margin-top: 20px;
+      margin-top: 22px;
     }
   }
 }
@@ -35,7 +35,7 @@
 
   @media (min-width: $tablet-width) {
     height: 174px;
-    margin-bottom: 65px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {

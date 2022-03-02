@@ -23,7 +23,7 @@
     padding-left: 40px;
 
     &::after {
-      margin-top: 20px;
+      margin-top: 22px;
     }
   }
 }
@@ -36,8 +36,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: start;
-    gap: 42px 123px;
-    margin-bottom: 59px;
+    gap: 32px 123px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
