@@ -82,6 +82,9 @@
   margin-bottom: 39px;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  column-gap: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
@@ -94,6 +97,10 @@
 }
 
 .additional__item {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+
   @media (min-width: $desktop-width) {
     width: 896px;
   }
@@ -106,9 +113,8 @@
 }
 
 .additional__gift {
-  position: relative;
-  height: 290px;
-  padding-top: 186px;
+  height: 289px;
+  padding-top: 58px;
   text-align: center;
   background-image: url("../img/gift-mobile.jpg");
   background-repeat: no-repeat;
@@ -157,17 +163,6 @@
   line-height: 20px;
   color: $white;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 78px;
-    height: 80px;
-    top: 58px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url("../img/icon_gift.svg");
-  }
-
   @media (min-width: $tablet-width) {
     &::before {
       left: 117px;
@@ -181,4 +176,8 @@
       transform: translateX(-50%);
     }
   }
+}
+
+.additional__icon {
+  margin-bottom: 48px;
 }

@@ -3,11 +3,26 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto min-content auto;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
+  // border-bottom: 1px solid $grey-350;
   border-top: 1px solid $grey-350;
+
+  &:first-child {
+    border-top: 1px solid $grey-350;
+  }
+
+  // &:nth-child(3) {
+  //   border-bottom: 1px solid $grey-350;
+  // }
 
   &:last-child {
     border-bottom: 1px solid $grey-350;
+  }
+
+  @media (min-width: 630px) {
+    &:nth-child(3) {
+      border-bottom: 1px solid $grey-350;
+    }
   }
 
   @media (min-width: $tablet-width) {

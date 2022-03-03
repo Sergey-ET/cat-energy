@@ -32,11 +32,13 @@
 .contacts__details {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 26px;
+  padding-right: 3px;
 
   @media (min-width: $tablet-width) {
+    padding-right: 0;
     margin-bottom: 59px;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {

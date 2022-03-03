@@ -218,6 +218,9 @@
 }
 
 .example__slider {
+  width: 280px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 708px;
