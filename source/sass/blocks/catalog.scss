@@ -36,7 +36,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 165px;
+    margin-bottom: 164px;
   }
 }
 
@@ -50,9 +50,7 @@
 
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 140px 60px;
+    gap: 141px 60px;
   }
 
   @media (min-width: $desktop-width) {

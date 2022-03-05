@@ -3,7 +3,7 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 68px;
+    padding-top: 67px;
     padding-bottom: 76px;
   }
 
@@ -82,12 +82,9 @@
   margin-bottom: 39px;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  column-gap: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 69px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,9 +94,7 @@
 }
 
 .additional__item {
-  max-width: 400px;
   width: 100%;
-  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     width: 896px;
@@ -127,10 +122,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
     height: 200px;
-    padding-top: 71px;
+    padding-top: 0;
     padding-right: 124px;
+    padding-left: 78px;
     text-align: left;
     background-image: url("../img/gift-tablet.jpg");
 
@@ -164,20 +161,16 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
-    &::before {
-      left: 117px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      top: 56px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+    margin-top: 4px;
   }
 }
 
 .additional__icon {
   margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+    width: 80px;
+    height: 83px;
+  }
 }
