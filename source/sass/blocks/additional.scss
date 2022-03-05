@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 76px;
+    padding-top: 75px;
     padding-bottom: 86px;
   }
 }
@@ -27,7 +27,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -69,8 +68,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 81px;
     width: 413px;
+    margin-bottom: 79px;
     margin-left: -40px;
     padding-left: 40px;
     padding-right: 35px;
@@ -97,7 +96,7 @@
   width: 100%;
 
   @media (min-width: $desktop-width) {
-    width: 896px;
+    width: 895px;
   }
 }
 
@@ -137,11 +136,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 290px;
+    height: 289px;
     width: 245px;
-    padding-top: 185px;
-    padding-left: 43px;
-    padding-right: 41px;
+    flex-direction: column;
+    padding: 56px 43px 42px 41px;
     text-align: center;
     background-image: url("../img/gift-desktop.jpg");
 
@@ -172,5 +170,9 @@
     margin-bottom: 4px;
     width: 80px;
     height: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
