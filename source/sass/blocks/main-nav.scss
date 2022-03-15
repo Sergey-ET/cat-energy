@@ -9,30 +9,21 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    column-gap: 35px;
     width: 440px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 478px;
-    max-width: 610px;
+    max-width: 600px;
+    width: 100%;
+    column-gap: 34px;
   }
 }
 
 .main-nav__item {
   @media (min-width: $tablet-width) {
     margin-top: 10px;
-
-    &:first-child {
-      margin-right: 33px;
-    }
-
-    &:nth-child(2) {
-      margin-right: 38px;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
 
     &--active {
       position: relative;
@@ -51,14 +42,6 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 3px;
-
-    &:first-child {
-      margin-right: 34px;
-    }
-
-    &:nth-child(2) {
-      margin-right: 34px;
-    }
 
     &--master--active {
       position: relative;

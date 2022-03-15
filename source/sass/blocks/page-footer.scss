@@ -46,7 +46,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-right: 156px;
+    margin-right: 144px;
   }
 }
 
@@ -65,16 +65,19 @@
 .page-footer__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   width: 130px;
+  column-gap: 34px;
+  row-gap: 15px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-start;
-    margin-right: 131px;
+    margin-right: 118px;
+    column-gap: 0;
+    width: 155px;
   }
 }
 
@@ -103,18 +106,22 @@
     &--vk {
       width: 30px;
       height: 22px;
-      margin-right: 27px;
+      margin-left: 13px;
+      margin-right: 13px;
     }
 
     &--ig {
       width: 23px;
       height: 23px;
-      margin-right: 21px;
+      margin-left: 14px;
+      margin-right: 10px;
     }
 
     &--fb {
       width: 28px;
       height: 33px;
+      margin-left: 11px;
+      margin-right: 11px;
     }
   }
 }
@@ -123,10 +130,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 20px;
   padding-top: 21px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    column-gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
   }
 }
 
@@ -136,7 +149,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  text-align: left;
   color: $grey-600;
+  word-break: break-all;
 
   &:active {
     opacity: 0.3;

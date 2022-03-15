@@ -26,12 +26,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 64px;
-    padding-bottom: 515px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 111px;
-    padding-bottom: 185px;
+    min-height: 582px;
 
     &::before {
       content: "";
@@ -59,14 +59,15 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    padding: 0 30px 0 117px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    padding: 0 110px 0 190px;
+    padding: 0 110px;
   }
 }
 
@@ -80,11 +81,17 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 41px;
     width: 414px;
+    margin-left: 87px;
+    margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
     color: $black;
+    order: -3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
 
@@ -99,13 +106,17 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
+    margin-left: 88px;
     margin-bottom: 49px;
     font-size: 20px;
     line-height: 20px;
     color: $black;
+    order: -2;
   }
 
   @media (min-width: $desktop-width) {
+    width: 414px;
+    margin-left: 80px;
     margin-bottom: 51px;
   }
 }
@@ -125,13 +136,14 @@
     width: 244px;
     padding-top: 18px;
     padding-bottom: 16px;
-    margin-left: -5px;
+    margin-left: 82px;
     font-size: 20px;
     line-height: 20px;
+    order: -1;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin-left: 80px;
     padding-top: 18px;
     padding-bottom: 16px;
   }
@@ -139,19 +151,19 @@
 
 .intro__image {
   @media (min-width: $tablet-width) {
-    position: absolute;
+    position: relative;
     width: 708px;
-    top: 201px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: -83px;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     width: 552px;
     height: 499px;
-    top: -82px;
-    left: 58%;
+    top: 225px;
+    left: 50%;
+    transform: translateX(-29%);
     z-index: 0;
   }
 }

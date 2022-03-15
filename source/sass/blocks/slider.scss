@@ -1,6 +1,6 @@
 .slider__content {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   padding: 0;
   list-style: none;
 
@@ -9,17 +9,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 33px;
+    margin-bottom: 36px;
   }
 }
 
 .slider__slide {
-  height: 240px;
+  height: 232px;
 
   &--before {
     background-image: url("../img/cat-fat-mobile.png");
     background-repeat: no-repeat;
     background-position: -20px 0;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-fat-mobile@2x.png");
@@ -29,6 +30,7 @@
       height: 520px;
       background-image: url("../img/cat-fat-tablet.png");
       background-position: 16px 0;
+      background-size: contain;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/cat-fat-tablet@2x.png");
@@ -36,7 +38,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-position: 40px 0;
+      background-position: 40px 2px;
     }
   }
 
@@ -54,6 +56,7 @@
     @media (min-width: $tablet-width) {
       height: 520px;
       background-image: url("../img/cat-skinny-tablet.png");
+      background-position: 107px 0;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/cat-skinny-tablet@2x.png");
@@ -61,7 +64,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-position: 131px -2px;
+      background-position: 131px 1px;
     }
   }
 }
@@ -70,20 +73,16 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-left: 44px;
-
-  @media (min-width: $tablet-width) {
-    width: 590px;
-    margin-left: 68px;
-  }
+  justify-content: center;
 
   @media (min-width: $desktop-width) {
-    margin-left: 119px;
+    justify-content: flex-end;
   }
 }
 
 .slider__button {
   padding: 0;
+  max-width: 90px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -103,6 +102,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 115px;
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $black-opacity-04;
@@ -127,7 +127,7 @@
 }
 
 .slider__scale {
-  width: 84px;
+  min-width: 84px;
   height: 14px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -138,7 +138,7 @@
   border-radius: 6px;
 
   @media (min-width: $tablet-width) {
-    width: 428px;
+    min-width: 428px;
     height: 6px;
     padding: 0;
     background-color: $grey-230;
@@ -164,7 +164,8 @@
     display: block;
     position: absolute;
     box-sizing: content-box;
-    top: -1px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
     width: 8px;
     height: 8px;
@@ -183,5 +184,9 @@
       filter: drop-shadow(0 3px 5px $black-opacity-02);
       box-shadow: 0 0 0 1px $green-100;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 57px;
   }
 }
