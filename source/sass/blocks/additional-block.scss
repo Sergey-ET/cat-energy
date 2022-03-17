@@ -1,14 +1,17 @@
+.additional-block {
+  position: relative;
+}
+
 .additional-block__title {
-  width: 184px;
-  margin-left: -20px;
   margin-bottom: 34px;
   padding-left: 20px;
+  padding-right: 23px;
   background-color: $white;
 
   &::after {
     content: "";
     position: absolute;
-    margin-top: 15px;
+    top: 15px;
     left: 0;
     right: 0;
     height: 2px;
@@ -17,19 +20,22 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 291px;
-    margin-left: -40px;
+    margin-left: 30px;
     margin-bottom: 57px;
     padding-left: 40px;
+    padding-right: 41px;
 
     &::after {
-      margin-top: 22px;
+      top: 22px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 70px;
+    padding-right: 41px;
+
     &::after {
-      margin-top: 23px;
+      top: 23px;
     }
   }
 }
@@ -40,7 +46,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: start;
     gap: 32px 123px;
     margin-bottom: 53px;

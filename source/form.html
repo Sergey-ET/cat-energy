@@ -64,7 +64,9 @@
       <div class="program__wrapper">
         <h1 class="program__title">Подбор программы</h1>
         <p class="program__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
-        <form class="form program-form" action="https://echo.htmlacademy.ru" method="get">
+      </div>
+      <form class="form program-form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="program__wrapper">
           <div class="form__container">
             <fieldset class="form__block block-form cat-block">
               <legend class="block-form__title visually-hidden">Данные кота</legend>
@@ -105,11 +107,13 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="form__block block-form owner-block">
-            <legend class="block-form__title owner-block__title">Контактные данные (владельца кота)</legend>
+        </div>
+        <fieldset class="form__block block-form owner-block">
+          <legend class="block-form__title owner-block__title">Контактные данные (владельца кота)</legend>
+          <div class="program__wrapper">
             <ul class="block-form__list owner-block__list">
               <li class="field owner-block__item">
-                <label class="field__label" for="email">E-mail:*</label>
+                <label class="field__label field__label--email" for="email">E-mail:*</label>
                 <input class="field__input owner-block__input owner-block__input--email" type="email" name="email"
                   id="email" placeholder="kuklachev@gmail.com">
                 <svg class="field__icon owner-block__icon owner-block__icon--email" width="20" height="15"
@@ -127,15 +131,19 @@
                 </svg>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="form__block block-form comment-block">
-            <legend class="block-form__title comment-block__title">Комментарий</legend>
+          </div>
+        </fieldset>
+        <fieldset class="form__block block-form comment-block">
+          <legend class="block-form__title comment-block__title">Комментарий</legend>
+          <div class="program__wrapper">
             <label class="visually-hidden" for="message">Расскажите обо всех повадках кота</label>
             <textarea class="message comment-block__message" id="message" name="message"
               placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-          <fieldset class="form__block block-form additional-block">
-            <legend class="block-form__title additional-block__title">Дополнительно</legend>
+          </div>
+        </fieldset>
+        <fieldset class="form__block block-form additional-block">
+          <legend class="block-form__title additional-block__title">Дополнительно</legend>
+          <div class="program__wrapper">
             <ul class="block-form__list additional-block__list">
               <li class="checkbox additional-block__item">
                 <input class="checkbox__input visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -154,13 +162,15 @@
                 <label class="checkbox__label" for="vitamins">Витамины</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
+        <div class="program__wrapper">
           <div class="form__inner">
             <button class="button form__button" type="submit">Отправить заявку</button>
             <small class="form__note">* — Обязательные поля</small>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
 
     <section class="contacts contacts--grey">
@@ -218,17 +228,12 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright-footer">
-        <a class="copyright-footer__text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML
-          Academy</a>
-        <a class="copyright-footer__icon" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="visually-hidden">HTML Academy</span>
-          <svg width="27" height="34" aria-hidden="true" focusable="false">
-            <use xlink:href="./img/sprite.svg#icon-html"></use>
-          </svg>
-        </a>
-      </div>
-      <!-- /.page-footer__copyright copyright-footer -->
+      <a class="page-footer__copyright copyright-footer" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright-footer__text">HTML Academy</span>
+        <svg class="copyright-footer__icon" width="27" height="34" aria-hidden="true" focusable="false">
+          <use xlink:href="./img/sprite.svg#icon-html"></use>
+        </svg>
+      </a>
     </div>
     <!-- /.page-footer__wrapper -->
   </footer>

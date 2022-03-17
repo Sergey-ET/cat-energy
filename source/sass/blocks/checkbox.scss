@@ -42,9 +42,12 @@
   }
 }
 
-.checkbox__input:hover + .checkbox__label::before,
-.checkbox__input:focus + .checkbox__label::before {
+.checkbox__input:hover + .checkbox__label::before {
   border: 1px solid $grey-450;
+}
+
+.checkbox__input:focus + .checkbox__label::before {
+  border: 2px solid $grey-600;
 }
 
 .checkbox__input:disabled + .checkbox__label,

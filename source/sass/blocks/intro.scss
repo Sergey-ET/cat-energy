@@ -31,7 +31,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 111px;
-    min-height: 582px;
+    padding-bottom: 52px;
 
     &::before {
       content: "";
@@ -158,10 +158,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     width: 552px;
     height: 499px;
-    top: 225px;
+    margin-top: -368px;
     left: 50%;
     transform: translateX(-29%);
     z-index: 0;

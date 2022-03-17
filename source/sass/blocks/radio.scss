@@ -43,9 +43,12 @@
   }
 }
 
-.radio__input:hover + .radio__label::before,
-.radio__input:focus + .radio__label::before {
+.radio__input:hover + .radio__label::before {
   border: 1px solid $grey-450;
+}
+
+.radio__input:focus + .radio__label::before {
+  border: 2px solid $grey-600;
 }
 
 .radio__input:disabled + .radio__label,
