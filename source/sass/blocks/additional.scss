@@ -3,13 +3,21 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 67px;
+    padding-top: 65px;
     padding-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 75px;
+    padding-top: 73px;
     padding-bottom: 86px;
+  }
+}
+
+.additional__line {
+  top: 16px;
+
+  @media (min-width: $tablet-width) {
+    top: 24px;
   }
 }
 
@@ -31,11 +39,12 @@
 }
 
 .additional__title {
-  width: 266px;
+  width: fit-content;
   margin: 0;
   margin-left: -20px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   padding-left: 20px;
+  padding-right: 22px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -43,32 +52,16 @@
   background-color: $white;
   color: $black;
 
-  &::after {
-    content: "";
-    position: absolute;
-    margin-top: 15px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: $green-100;
-    z-index: -1;
-  }
-
   @media (min-width: $tablet-width) {
-    width: 410px;
-    padding-left: 36px;
+    padding-left: 37px;
+    padding-right: 36px;
     margin-left: 0;
     margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
-
-    &::after {
-      margin-top: 22px;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 413px;
     margin-bottom: 79px;
     margin-left: -40px;
     padding-left: 40px;
@@ -107,8 +100,8 @@
 }
 
 .additional__gift {
-  height: 289px;
   padding-top: 58px;
+  padding-bottom: 41px;
   text-align: center;
   background-image: url("../img/gift-mobile.jpg");
   background-repeat: no-repeat;
@@ -123,8 +116,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 200px;
-    padding-top: 0;
+    padding-top: 57px;
+    padding-bottom: 56px;
     padding-right: 124px;
     padding-left: 78px;
     text-align: left;
@@ -136,7 +129,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 289px;
     width: 245px;
     flex-direction: column;
     padding: 56px 43px 42px 41px;
@@ -159,7 +151,7 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
-    margin-top: 4px;
+    padding-top: 4px;
   }
 }
 
