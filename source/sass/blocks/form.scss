@@ -69,16 +69,28 @@
 }
 
 .form__container {
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+    margin-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 69px;
+    margin-bottom: 67px;
+  }
+}
+
+.form__line {
+  top: 17px;
+
+  &--owner {
+    top: 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 24px;
   }
 }

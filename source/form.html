@@ -108,9 +108,10 @@
             </fieldset>
           </div>
         </div>
-        <fieldset class="form__block block-form owner-block">
-          <legend class="block-form__title owner-block__title">Контактные данные (владельца кота)</legend>
-          <div class="program__wrapper">
+        <hr class="line form__line form__line--owner">
+        <div class="program__wrapper">
+          <fieldset class="form__block block-form owner-block">
+            <legend class="block-form__title owner-block__title">Контактные данные (владельца кота)</legend>
             <ul class="block-form__list owner-block__list">
               <li class="field owner-block__item">
                 <label class="field__label field__label--email" for="email">E-mail:*</label>
@@ -131,19 +132,21 @@
                 </svg>
               </li>
             </ul>
-          </div>
-        </fieldset>
-        <fieldset class="form__block block-form comment-block">
-          <legend class="block-form__title comment-block__title">Комментарий</legend>
-          <div class="program__wrapper">
+          </fieldset>
+        </div>
+        <hr class="line form__line form__line--comment">
+        <div class="program__wrapper">
+          <fieldset class="form__block block-form comment-block">
+            <legend class="block-form__title comment-block__title">Комментарий</legend>
             <label class="visually-hidden" for="message">Расскажите обо всех повадках кота</label>
             <textarea class="message comment-block__message" id="message" name="message"
               placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
-        </fieldset>
-        <fieldset class="form__block block-form additional-block">
-          <legend class="block-form__title additional-block__title">Дополнительно</legend>
-          <div class="program__wrapper">
+          </fieldset>
+        </div>
+        <hr class="line form__line form__line--additional">
+        <div class="program__wrapper">
+          <fieldset class="form__block block-form additional-block">
+            <legend class="block-form__title additional-block__title">Дополнительно</legend>
             <ul class="block-form__list additional-block__list">
               <li class="checkbox additional-block__item">
                 <input class="checkbox__input visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -162,8 +165,8 @@
                 <label class="checkbox__label" for="vitamins">Витамины</label>
               </li>
             </ul>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
         <div class="program__wrapper">
           <div class="form__inner">
             <button class="button form__button" type="submit">Отправить заявку</button>

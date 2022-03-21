@@ -1,42 +1,20 @@
-.additional-block {
-  position: relative;
-}
-
 .additional-block__title {
   margin-bottom: 34px;
+  margin-left: -20px;
   padding-left: 20px;
   padding-right: 23px;
   background-color: $white;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: $green-100;
-    z-index: -1;
-  }
-
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    margin-left: -40px;
     margin-bottom: 57px;
     padding-left: 40px;
     padding-right: 41px;
-
-    &::after {
-      top: 22px;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 70px;
+    margin-left: -40px;
     padding-right: 41px;
-
-    &::after {
-      top: 23px;
-    }
   }
 }
 
