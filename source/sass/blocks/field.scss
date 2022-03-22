@@ -30,7 +30,7 @@
 .field__input {
   width: 100%;
   margin-left: 14px;
-  padding: 13px 5px 14px 15px;
+  padding: 16px 5px 13px 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -56,9 +56,13 @@
     border: 2px solid $grey-600;
   }
 
+  @media (max-width: $mobile-width-only) {
+    height: 45px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 18px;
-    padding: 10px 5px 10px 20px;
+    padding: 10px 5px 10px 19px;
     font-size: 20px;
     line-height: 30px;
 
