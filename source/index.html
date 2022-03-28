@@ -187,8 +187,8 @@
         </div>
         <div class="slider example__slider">
           <ul class="slider__content">
-            <li class="slider__slide slider__slide--before"></li>
-            <li class="slider__slide slider__slide--after"></li>
+            <li class="slider__slide slider__slide--before slider__slide--before--clip slider__slide--active"></li>
+            <li class="slider__slide slider__slide--after slider__slide--after--clip"></li>
           </ul>
           <div class="slider__controls">
             <button class="slider__button slider__button--before" type="button">Было</button>
@@ -267,22 +267,7 @@
     <!-- /.page-footer__wrapper -->
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

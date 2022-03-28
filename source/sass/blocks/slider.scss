@@ -1,10 +1,15 @@
 .slider__content {
+  width: 280px;
+  height: 232px;
+  position: relative;
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 520px;
     margin-bottom: 14px;
   }
 
@@ -14,9 +19,12 @@
 }
 
 .slider__slide {
-  height: 232px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 
   &--before {
+    display: none;
     background-image: url("../img/cat-fat-mobile.png");
     background-repeat: no-repeat;
     background-position: -20px 0;
@@ -39,6 +47,17 @@
 
     @media (min-width: $desktop-width) {
       background-position: 40px 2px;
+    }
+
+    &--clip {
+      @media (min-width: $tablet-width) {
+        width: 50%;
+        background-size: cover;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 57%;
+      }
     }
   }
 
@@ -66,6 +85,22 @@
     @media (min-width: $desktop-width) {
       background-position: 131px 1px;
     }
+
+    &--clip {
+      @media (min-width: $tablet-width) {
+        display: block;
+        clip: rect(auto, auto, auto, 354px);
+      }
+
+      @media (min-width: $desktop-width) {
+        clip: rect(auto, auto, auto, 403px);
+      }
+    }
+  }
+
+  &--active {
+    display: block;
+    clip: auto;
   }
 }
 
