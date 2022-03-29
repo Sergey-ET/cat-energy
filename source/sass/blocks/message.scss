@@ -19,11 +19,11 @@
   }
 
   &:hover {
-    border: 1px solid $grey-350;
+    outline: 1px solid $grey-350;
   }
 
   &:focus {
-    border: 2px solid $grey-600;
+    outline: 2px solid $grey-600;
   }
 
   @media (min-width: $tablet-width) {

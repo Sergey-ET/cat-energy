@@ -73,12 +73,13 @@
               <ul class="block-form__list">
                 <li class="field cat-block__item">
                   <label class="field__label" for="name">Имя:*</label>
-                  <input class="field__input cat-block__input" type="text" name="name" id="name" placeholder="Барсик">
+                  <input class="field__input cat-block__input" type="text" name="name" id="name" placeholder="Барсик"
+                    pattern="[A-Za-zА-Яа-яЁё]{2,}" required>
                 </li>
                 <li class="field cat-block__item">
                   <label class="field__label" for="weight">Вес&nbsp;(кг):*</label>
                   <input class="field__input cat-block__input" type="number" min="0" id="weight" name="weight"
-                    placeholder="7">
+                    placeholder="7" required>
                 </li>
                 <li class="field cat-block__item">
                   <label class="field__label" for="age">Возраст&nbsp;(лет):</label>
@@ -116,18 +117,20 @@
               <li class="field owner-block__item">
                 <label class="field__label field__label--email" for="email">E-mail:*</label>
                 <input class="field__input owner-block__input owner-block__input--email" type="email" name="email"
-                  id="email" placeholder="kuklachev@gmail.com">
-                <svg class="field__icon owner-block__icon owner-block__icon--email" width="20" height="15"
-                  aria-hidden="true" focusable="false">
+                  id="email" placeholder="kuklachev@gmail.com"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  title="Пожалуйста, укажите адрес почты в формате XXX@XXX.XX" required>
+                <svg class="field__icon field__icon--email" width="20" height="15" aria-hidden="true" focusable="false">
                   <use xlink:href="./img/sprite.svg#icon-email"></use>
                 </svg>
               </li>
               <li class="field owner-block__item">
                 <label class="field__label" for="phone">Телефон:*</label>
                 <input class="field__input owner-block__input owner-block__input--phone" type="tel" name="phone"
-                  id="phone" placeholder="8 (960) 900-60-90">
-                <svg class="field__icon owner-block__icon owner-block__icon--phone" width="20" height="21"
-                  aria-hidden="true" focusable="false">
+                  id="phone" placeholder="8 (960) 900-60-90"
+                  pattern="[0-9]{1,}\s\([0-9]{3,}\)\s[0-9]{3,}-[0-9]{2,}-[0-9]{2,}"
+                  title="Пожалуйста, укажите номер телефона в формате X (XXX) XXX-XX-XX" required>
+                <svg class="field__icon field__icon--phone" width="20" height="21" aria-hidden="true" focusable="false">
                   <use xlink:href="./img/sprite.svg#icon-phone"></use>
                 </svg>
               </li>

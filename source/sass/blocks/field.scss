@@ -49,11 +49,23 @@
   }
 
   &:hover {
-    border: 1px solid $grey-350;
+    outline: 1px solid $grey-350;
   }
 
   &:focus {
-    border: 2px solid $grey-600;
+    outline: 2px solid $grey-600;
+  }
+
+  &:focus + .field__icon {
+    stroke: $green-100;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 2px solid $red;
+  }
+
+  &:invalid:not(:placeholder-shown) + .field__icon {
+    stroke: $red;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -69,6 +81,34 @@
     &::placeholder {
       font-size: 20px;
       line-height: 30px;
+    }
+  }
+}
+
+.field__icon {
+  position: absolute;
+  right: 14px;
+
+  &--email {
+    fill: none;
+    stroke: $grey-700;
+  }
+
+  &--phone {
+    fill: $grey-700;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--email {
+      right: 18px;
+    }
+
+    &--phone {
+      right: 16px;
     }
   }
 }
