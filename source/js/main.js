@@ -1,3 +1,84 @@
+// Yandex Map
+ymaps.ready(function () {
+  if (document.documentElement.clientWidth < 768) {
+    var myMap = new ymaps.Map('map', {
+    center: [59.938870, 30.323100],
+    zoom: 15
+  }, {
+    autoFitToViewport: 'always',
+    searchControlProvider: 'yandex#search'
+  })
+
+  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  ),
+
+  myPlacemarkWithContent = new ymaps.Placemark([59.938635, 30.323118], {
+      hintContent: 'Интернет-магазин Cat Energy',
+      balloonContent: 'Cat Energy',
+  }, {
+      iconLayout: 'default#imageWithContent',
+      iconImageHref: './img/map-pin-mobile.png',
+      iconImageSize: [57, 53],
+      iconImageOffset: [-28, -53],
+      iconContentOffset: [15, 15],
+      iconContentLayout: MyIconContentLayout
+  });
+  } else if (document.documentElement.clientWidth < 1440) {
+    var myMap = new ymaps.Map('map', {
+    center: [59.939750, 30.322900],
+    zoom: 15
+  }, {
+    autoFitToViewport: 'always',
+    searchControlProvider: 'yandex#search'
+  })
+
+  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  ),
+
+  myPlacemarkWithContent = new ymaps.Placemark([59.938635, 30.323118], {
+      hintContent: 'Интернет-магазин Cat Energy',
+      balloonContent: 'Cat Energy',
+  }, {
+      iconLayout: 'default#imageWithContent',
+      iconImageHref: './img/map-pin-tablet.png',
+      iconImageSize: [113, 106],
+      iconImageOffset: [-57, -106],
+      iconContentOffset: [15, 15],
+      iconContentLayout: MyIconContentLayout
+  });
+  myMap.container.fitToViewport();
+  } else if (document.documentElement.clientWidth >= 1440) {
+    var myMap = new ymaps.Map('map', {
+    center: [59.939460, 30.312550],
+    zoom: 15
+  }, {
+    autoFitToViewport: 'always',
+    searchControlProvider: 'yandex#search'
+  })
+
+  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  ),
+
+  myPlacemarkWithContent = new ymaps.Placemark([59.938635, 30.323118], {
+      hintContent: 'Интернет-магазин Cat Energy',
+      balloonContent: 'Cat Energy',
+  }, {
+      iconLayout: 'default#imageWithContent',
+      iconImageHref: './img/map-pin-tablet.png',
+      iconImageSize: [113, 106],
+      iconImageOffset: [-57, -106],
+      iconContentOffset: [15, 15],
+      iconContentLayout: MyIconContentLayout
+  });
+  myMap.container.fitToViewport();
+  }
+
+  myMap.geoObjects.add(myPlacemarkWithContent);
+});
+
 // Mobile menu
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
