@@ -15,7 +15,7 @@
   <link rel="icon" href="./img/favicons/32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="./img/favicons/180.png" sizes="180x180">
   <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </head>
 
@@ -79,12 +79,12 @@
                 </li>
                 <li class="field cat-block__item">
                   <label class="field__label" for="weight">Вес&nbsp;(кг):*</label>
-                  <input class="field__input cat-block__input" type="number" min="0" id="weight" name="weight"
-                    placeholder="7" required>
+                  <input class="field__input cat-block__input" type="number" min="0" step="0.1" id="weight"
+                    name="weight" placeholder="7" required>
                 </li>
                 <li class="field cat-block__item">
                   <label class="field__label" for="age">Возраст&nbsp;(лет):</label>
-                  <input class="field__input cat-block__input" type="number" min="0" id="age" name="age"
+                  <input class="field__input cat-block__input" type="number" min="0" step="0.1" id="age" name="age"
                     placeholder="7">
                 </li>
               </ul>
@@ -233,7 +233,8 @@
           </li>
         </ul>
       </div>
-      <a class="page-footer__copyright copyright-footer" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="page-footer__copyright copyright-footer" href="https://htmlacademy.ru/intensive/adaptive"
+        target="_blank">
         <span class="copyright-footer__text">HTML Academy</span>
         <svg class="copyright-footer__icon" width="27" height="34" aria-hidden="true" focusable="false">
           <use xlink:href="./img/sprite.svg#icon-html"></use>
@@ -243,7 +244,7 @@
     <!-- /.page-footer__wrapper -->
   </footer>
 
-  <script src="./js/script.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

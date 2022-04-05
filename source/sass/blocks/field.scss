@@ -46,26 +46,46 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $grey-600;
+    opacity: 1;
   }
 
-  &:hover {
-    outline: 1px solid $grey-350;
+  &:hover,
+  &:placeholder-shown:hover {
+    box-shadow: 0 0 0 1px $grey-350;
   }
 
-  &:focus {
-    outline: 2px solid $grey-600;
+  &:focus,
+  &:placeholder-shown:focus {
+    outline: none;
+    border-color: $grey-600;
+    box-shadow: 0 0 0 1px $grey-600 inset;
   }
 
-  &:focus + .field__icon {
-    stroke: $green-100;
+  &:invalid {
+    border-color: $red;
+    box-shadow: 0 0 0 1px $red inset;
   }
 
-  &:invalid:not(:placeholder-shown) {
-    outline: 2px solid $red;
+  &:invalid:focus {
+    border-color: $grey-600;
+    box-shadow: 0 0 0 1px $grey-600 inset;
   }
 
-  &:invalid:not(:placeholder-shown) + .field__icon {
+  &:placeholder-shown {
+    border-color: transparent;
+    box-shadow: 0 0 0 1px $grey-200;
+  }
+
+  &:invalid + .field__icon {
     stroke: $red;
+  }
+
+  &:invalid:placeholder-shown + .field__icon {
+    stroke: $grey-700;
+  }
+
+  &:placeholder-shown:focus + .field__icon {
+    stroke: $green-100;
   }
 
   @media (max-width: $mobile-width-only) {
