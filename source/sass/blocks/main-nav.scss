@@ -70,20 +70,20 @@
   text-transform: uppercase;
   color: $black;
 
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 8px 0;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-
-    &[href]:hover,
-    &[href]:focus {
-      opacity: 0.6;
-    }
-
-    &[href]:active {
-      opacity: 0.3;
-    }
   }
 
   @media (min-width: $desktop-width) {
