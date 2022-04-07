@@ -49,29 +49,32 @@
     opacity: 1;
   }
 
-  &:hover,
-  &:placeholder-shown:hover {
+  &:hover {
+    border: 1px solid $grey-350;
+  }
+
+  &:required:placeholder-shown:hover {
     box-shadow: 0 0 0 1px $grey-350;
   }
 
   &:focus,
-  &:placeholder-shown:focus {
+  &:required:placeholder-shown:focus {
     outline: none;
     border-color: $grey-600;
     box-shadow: 0 0 0 1px $grey-600 inset;
   }
 
-  &:invalid {
+  &:invalid:required {
     border-color: $red;
     box-shadow: 0 0 0 1px $red inset;
   }
 
-  &:invalid:focus {
+  &:invalid:required:focus {
     border-color: $grey-600;
     box-shadow: 0 0 0 1px $grey-600 inset;
   }
 
-  &:placeholder-shown {
+  &:required:placeholder-shown {
     border-color: transparent;
     box-shadow: 0 0 0 1px $grey-200;
   }
