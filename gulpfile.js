@@ -33,7 +33,7 @@ const styles = () => {
 
 exports.styles = styles;
 
-// HTML
+// HTML Minifying
 
 const html = () => {
   return gulp.src("source/*.html")
@@ -41,7 +41,9 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
-// Scripts
+exports.html = html;
+
+// Scripts Minifying
 
 const scripts = () => {
   return gulp.src("source/js/script.js")
@@ -53,19 +55,21 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
-// Images
+// Images Optimisation
 
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({progressive: true}),
-      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
 }
 
 exports.optimizeImages = optimizeImages;
+
+// Images Copying
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -74,17 +78,17 @@ const copyImages = () => {
 
 exports.copyImages = copyImages;
 
-// WebP
+// WebP Creation
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({quality: 75}))
     .pipe(gulp.dest("build/img"))
 }
 
 exports.createWebp = createWebp;
 
-// Sprite
+// Sprite Building
 
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
@@ -97,7 +101,7 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
-// Copy
+// Copying
 
 const copy = (done) => {
   gulp.src([
@@ -113,13 +117,15 @@ const copy = (done) => {
 
 exports.copy = copy;
 
-// Clean
+// Cleaning
 
 const clean = () => {
   return del("build");
 };
 
-// Server
+exports.clean = clean;
+
+// Server Running
 
 const server = (done) => {
   sync.init({
@@ -135,14 +141,16 @@ const server = (done) => {
 
 exports.server = server;
 
-// Reload
+// Reloading
 
 const reload = (done) => {
   sync.reload();
   done();
 }
 
-// Watcher
+exports.reload = reload;
+
+// Watcher Running
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
@@ -150,7 +158,7 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
-// Build
+// Build Running
 
 const build = gulp.series(
   clean,
