@@ -79,16 +79,28 @@
     box-shadow: 0 0 0 1px $grey-200;
   }
 
-  &:invalid + .field__icon {
+  &:invalid + .field__icon--email {
     stroke: $red;
   }
 
-  &:invalid:placeholder-shown + .field__icon {
+  &:invalid + .field__icon--phone {
+    fill: $red;
+  }
+
+  &:invalid:placeholder-shown + .field__icon--email {
     stroke: $grey-700;
   }
 
-  &:placeholder-shown:focus + .field__icon {
+  &:invalid:placeholder-shown + .field__icon--phone {
+    fill: $grey-700;
+  }
+
+  &:placeholder-shown:focus + .field__icon--email {
     stroke: $green-100;
+  }
+
+  &:placeholder-shown:focus + .field__icon--phone {
+    fill: $green-100;
   }
 
   @media (max-width: $mobile-width-only) {
