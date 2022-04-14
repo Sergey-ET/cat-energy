@@ -116,6 +116,10 @@
   }
 }
 
+.main-nav--nojs {
+  margin-top: 15px;
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
