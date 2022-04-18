@@ -51,9 +51,7 @@
   border: 2px solid $grey-600;
 }
 
-.radio__input:disabled + .radio__label,
-.radio__input:disabled + .radio__label::before,
-.radio__input:disabled + .radio__label::after {
+.radio__input:disabled + .radio__label {
   opacity: 0.3;
 }
 
