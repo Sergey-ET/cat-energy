@@ -135,34 +135,3 @@
     padding: 0;
   }
 }
-
-.copyright-footer__text {
-  max-width: 50%;
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: left;
-  color: $grey-600;
-  word-break: break-all;
-
-  @media (min-width: $tablet-width) {
-    max-width: 115px;
-  }
-}
-
-.copyright-footer__icon {
-  width: 27px;
-  fill: $grey-500;
-}
-
-.page-footer__copyright:hover .copyright-footer__icon,
-.page-footer__copyright:focus .copyright-footer__icon {
-  fill: $green-100;
-}
-
-.page-footer__copyright:active,
-.page-footer__copyright:active .copyright-footer__icon {
-  opacity: 0.3;
-}
