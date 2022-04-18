@@ -4,25 +4,6 @@
   border: none;
 }
 
-.block-form__title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 26px;
-  color: $black;
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-  }
-}
-
-.block-form__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .form__inner {
   text-align: center;
 
