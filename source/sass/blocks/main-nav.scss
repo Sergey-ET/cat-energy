@@ -117,7 +117,9 @@
 }
 
 .main-nav--nojs {
-  margin-top: 15px;
+  @media (max-width: $mobile-width-only) {
+    margin-top: 15px;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
