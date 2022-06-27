@@ -1,7 +1,5 @@
 # <img align="left" width="50" height="50" alt="Logo" src="./source/img/map-pin-tablet.png"> E-shop "Cat Energy"
 
-<img align="left" width="27" height="34" alt="HTML Academy" src="./source/img/icons/icon-html.svg" style="background-color: white;">
-
 Training project at asynchronous course "Profession "Frontend Developer" by [HTML Academy](https://htmlacademy.ru). Project was done in April 2022.
 
 Project completed by [Sergey Troshkin](https://htmlacademy.ru/profile/therealdeveloper)
