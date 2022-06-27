@@ -1,5 +1,4 @@
-# <img align="left" width="50" height="50" alt="Logo" src="./source/img/map-pin-tablet.png">
-E-shop "Cat Energy"
+# <img align="left" width="50" height="50" alt="Logo" src="./source/img/map-pin-tablet.png"> E-shop "Cat Energy"
 
 <img align="left" width="27" height="34" alt="HTML Academy" src="./source/img/icons/icon-html.svg" style="background-color: white;">
 
